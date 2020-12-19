@@ -9,6 +9,7 @@ mod day5;
 mod day6;
 mod day7;
 mod day8;
+mod day9;
 
 use std::fs::File;
 use std::io::{self, BufRead};
@@ -45,6 +46,10 @@ fn main() -> Result<(), std::io::Error> {
 
     println!("day8 step1 {:?}", day8::step1()?);
     println!("day8 step2 {:?}", day8::step2()?);
+
+    let day9step1 = day9::step1(25);
+    println!("day9 step1 {:?}", day9step1);
+    println!("day9 step2 {:?}", day9::step2(day9step1));
     Ok(())
 }
 
