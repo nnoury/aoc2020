@@ -2,6 +2,7 @@
 extern crate lazy_static;
 
 mod day1;
+mod day10;
 mod day2;
 mod day3;
 mod day4;
@@ -50,6 +51,9 @@ fn main() -> Result<(), std::io::Error> {
     let day9step1 = day9::step1(25);
     println!("day9 step1 {:?}", day9step1);
     println!("day9 step2 {:?}", day9::step2(day9step1));
+
+    println!("day10 step1 {:?}", day10::step1());
+    println!("day10 step2 {:?}", day10::step2());
     Ok(())
 }
 
